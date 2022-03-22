@@ -33,3 +33,11 @@ function createInput() {
 }
 
 createInput();
+
+function createOl() {
+  const ol = document.createElement('ol');
+  ol.id = 'lista-tarefas';
+  header1.appendChild(ol);
+}
+
+createOl();
