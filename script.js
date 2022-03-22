@@ -68,9 +68,19 @@ function addTask() {
 }
 
 function createLi(objeto) {
-  const ol = document.getElementById('criar-tarefa');
+  const ol = document.getElementById('lista-tarefas');
   const li = document.createElement('li');
 
   li.innerText = objeto.tarefa;
   ol.appendChild(li);
 }
+
+window.onload = function () {
+  if (localStorage.length > 0) {
+    for (let index = 0; index < localStorage.length; index += 1) {
+      let key = localStorage.key(index);
+      let objeto = JSON.parse(localStorage.getItem(key));
+      createLi(objeto);
+    }
+  }
+};
