@@ -1,5 +1,9 @@
 const principal = document.getElementsByTagName('body')[0];
 
+let tarefas = {
+  tarefa: ' ',
+};
+
 function createHeader() {
   const header = document.createElement('header');
   principal.appendChild(header);
@@ -29,6 +33,7 @@ createP();
 function createInput() {
   const input = document.createElement('input');
   input.id = 'texto-tarefa';
+  input.type = 'text';
   header1.appendChild(input);
 }
 
@@ -41,3 +46,44 @@ function createOl() {
 }
 
 createOl();
+
+function createLi(objeto) {
+  const ol = document.getElementById('lista-tarefas');
+  const li = document.createElement('li');
+  li.innerHTML = objeto.tarefa;
+  ol.appendChild(li);
+}
+
+createLi();
+
+function createTask() {
+  const button1 = document.createElement('button');
+  button1.id = 'criar-tarefa';
+  button1.innerText = 'adicionar tarefa';
+  header1.appendChild(button1);
+}
+
+createTask();
+
+function addTask() {
+  tarefas.tarefa = document.getElementById('texto-tarefa').value;
+
+  localStorage.setItem(tarefas.tarefa, JSON.stringify(tarefas));
+
+  document.getElementById('texto-tarefa').value = ' ';
+
+  createLi(tarefas);
+}
+
+const button1 = document.getElementById('criar-tarefa');
+button1.addEventListener('click', addTask);
+
+window.onload = function () {
+  if (localStorage.length > 0) {
+    for (let index = 0; index < localStorage.length; index += 1) {
+      let key = localStorage.key(i);
+      let objeto = JSON.parse(localStorage.getItem(key));
+      createLi(objeto);
+    }
+  }
+};
