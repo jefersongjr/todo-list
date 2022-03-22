@@ -66,3 +66,11 @@ function addTask() {
 
   document.getElementById('texto-tarefa').value = ' ';
 }
+
+function createLi(objeto) {
+  const ol = document.getElementById('criar-tarefa');
+  const li = document.createElement('li');
+
+  li.innerText = objeto.tarefa;
+  ol.appendChild(li);
+}
