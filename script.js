@@ -55,3 +55,14 @@ function createButton() {
 }
 
 createButton();
+
+const button1 = document.getElementById('criar-tarefa');
+button1.addEventListener('click', addTask);
+
+function addTask() {
+  tarefas.tarefa = document.getElementById('texto-tarefa').value;
+
+  localStorage.setItem(tarefas.tarefa, JSON.stringify(tarefas));
+
+  document.getElementById('texto-tarefa').value = ' ';
+}
