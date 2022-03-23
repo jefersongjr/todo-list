@@ -10,6 +10,8 @@ function createLi(object) {
 
   li.innerText = object.task;
 
+  li.addEventListener('click', changeBackground);
+
   ol.appendChild(li);
 }
 
@@ -24,3 +26,11 @@ function addTask() {
 }
 
 buttonAdd.addEventListener('click', addTask);
+
+const li = document.getElementsByTagName('li');
+function changeBackground(event) {
+  for (let index = 0; index < li.length; index += 1) {
+    li[index].classList.remove('backgroundGray');
+  }
+  event.target.classList = 'backgroundGray';
+}
