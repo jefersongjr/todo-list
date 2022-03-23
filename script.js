@@ -4,6 +4,9 @@ let list = {
 
 const ol = document.getElementById('lista-tarefas');
 const buttonAdd = document.querySelector('#criar-tarefa');
+const buttonRmv = document.querySelector('#apaga-tudo');
+
+buttonRmv.addEventListener('click', clearList);
 
 function createLi(object) {
   const li = document.createElement('li');
@@ -43,5 +46,12 @@ function completed(event) {
     } else {
       event.target.classList.add('completed');
     }
+  }
+}
+
+function clearList() {
+  const task = document.getElementsByClassName('task');
+  for (let index = 0; index < task.length; index += 1) {
+    li[index].remove();
   }
 }

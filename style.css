@@ -1,8 +1,7 @@
-.backgroundGray{
-    background-color: gray;
+.backgroundGray {
+  background-color: gray;
 }
 
-.completed{
-    text-decoration: line-through;
-    color: red;
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
 }
