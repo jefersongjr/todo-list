@@ -11,6 +11,7 @@ function createLi(object) {
   li.innerText = object.task;
 
   li.addEventListener('click', changeBackground);
+  li.addEventListener('dblclick', completed);
 
   ol.appendChild(li);
 }
@@ -32,5 +33,15 @@ function changeBackground(event) {
   for (let index = 0; index < li.length; index += 1) {
     li[index].classList.remove('backgroundGray');
   }
-  event.target.classList = 'backgroundGray';
+  event.target.classList.add('backgroundGray');
+}
+
+function completed(event) {
+  for (let index = 0; index < li.length; index += 1) {
+    if (li[index].classList.contains('completed')) {
+      event.target.classList.remove('completed');
+    } else {
+      event.target.classList.add('completed');
+    }
+  }
 }
