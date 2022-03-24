@@ -5,8 +5,10 @@ let list = {
 const ol = document.getElementById('lista-tarefas');
 const buttonAdd = document.querySelector('#criar-tarefa');
 const buttonRmv = document.querySelector('#apaga-tudo');
+const buttonRmvCompleted = document.querySelector('#remover-finalizados');
 
 buttonRmv.addEventListener('click', clearList);
+buttonRmvCompleted.addEventListener('click', removeCompleted);
 
 function createLi(object) {
   const li = document.createElement('li');
@@ -50,5 +52,13 @@ function completed(event) {
 function clearList() {
   for (let index = li.length - 1; index >= 0; index -= 1) {
     li[index].remove();
+  }
+}
+
+function removeCompleted() {
+  for (let index = 0; index < li.length; index += 1) {
+    if (li[index].classList.contains('completed')) {
+      li[index].remove();
+    }
   }
 }
