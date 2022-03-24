@@ -40,18 +40,15 @@ function changeBackground(event) {
 }
 
 function completed(event) {
-  for (let index = 0; index < li.length; index += 1) {
-    if (li[index].classList.contains('completed')) {
-      event.target.classList.remove('completed');
-    } else {
-      event.target.classList.add('completed');
-    }
+  if (event.target.classList.contains('completed')) {
+    event.target.classList.remove('completed');
+  } else {
+    event.target.classList.add('completed');
   }
 }
 
 function clearList() {
-  const task = document.getElementsByClassName('task');
-  for (let index = 0; index < task.length; index += 1) {
+  for (let index = 0; index < li.length; index += 1) {
     li[index].remove();
   }
 }
