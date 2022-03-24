@@ -48,7 +48,7 @@ function completed(event) {
 }
 
 function clearList() {
-  for (let index = 0; index < li.length; index += 1) {
+  for (let index = li.length - 1; index >= 0; index -= 1) {
     li[index].remove();
   }
 }
