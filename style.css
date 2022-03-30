@@ -1,7 +1,67 @@
+body{
+  background-image: url('https://images.unsplash.com/photo-1642543492457-39a2ce63bb59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-size:cover;
+
+}
 .backgroundGray {
   background-color: gray;
 }
 
 .completed {
   text-decoration: line-through solid rgb(0, 0, 0);
+}
+
+header{
+  text-align: center;
+  margin: 100px auto;
+  background-color: #ccdae7;
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+
+}
+
+#criar-tarefa{
+  background-color: rgb(95, 212, 95);
+  color: rgb(249, 253, 249);
+  border: none;
+  height: 30px;
+  border-radius: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#remover-finalizados{
+background-color: rgb(224, 226, 101);
+color: rgb(249, 253, 249);
+border: none;
+height: 30px;
+border-radius: 30px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+#apaga-tudo{
+  background-color: rgb(224, 100, 43);
+  color: rgb(249, 253, 249);
+  border: none;
+  height: 30px;
+  border-radius: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+#criar-tarefa:hover, #apaga-tudo:hover, #remover-finalizados:hover{
+  opacity: 0.6;
+}
+
+#criar-tarefa:active{
+  background-color: rgb(249, 253, 249);
+  color:rgb(95, 212, 95);
+}
+#apaga-tudo:active{
+  background-color: rgb(249, 253, 249);
+  color: rgb(224, 100, 43);
+}
+#remover-finalizados:active{
+  background-color: rgb(249, 253, 249);
+  color: rgb(224, 226, 101) ;
 }
