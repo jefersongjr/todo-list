@@ -4,7 +4,7 @@ body {
 }
 
 .backgroundGray {
-  background-color: gray;
+  background-color: rgb(163, 231, 214);
 }
 
 .completed {
@@ -22,7 +22,7 @@ header {
 }
 
 #criar-tarefa {
-  background-color: rgb(95, 212, 95);
+  background-color: rgb(37, 150, 190);
   color: rgb(249, 253, 249);
   border: none;
   height: 30px;
@@ -31,7 +31,7 @@ header {
   font-weight: bold;
 }
 #remover-finalizados {
-background-color: rgb(224, 226, 101);
+background-color: rgb(37, 150, 190);
 color: rgb(249, 253, 249);
 border: none;
 height: 30px;
@@ -41,7 +41,7 @@ font-weight: bold;
 }
 
 #apaga-tudo {
-  background-color: rgb(224, 100, 43);
+  background-color: rgb(37, 150, 190);
   color: rgb(249, 253, 249);
   border: none;
   height: 30px;
@@ -75,13 +75,12 @@ h1 {
 p {
   color: aliceblue;
   font-weight: 900;
-  background-color: #f3a59e;
+  background-color: hwb(5 62% 5%);
 }
 
 li {
   color: aliceblue;
   font-family: 'Titan One', cursive;
-  background-color: #f3a59e;
-
+  background-color: rgb(243, 165, 158);
   opacity: 100%;
 }
