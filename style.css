@@ -1,8 +1,8 @@
-body{
-  background-image: url('https://images.unsplash.com/photo-1642543492457-39a2ce63bb59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+body {
+  background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L2pvYjU0NS13aXQtNTYtZy14LmpwZw.jpg');
   background-size:cover;
-
 }
+
 .backgroundGray {
   background-color: gray;
 }
@@ -11,17 +11,17 @@ body{
   text-decoration: line-through solid rgb(0, 0, 0);
 }
 
-header{
+header {
   text-align: center;
   margin: 100px auto;
-  background-color: #ccdae7;
+  background-color: #f9b9b3;
   width: 600px;
   height: auto;
   border-radius: 20px;
 
 }
 
-#criar-tarefa{
+#criar-tarefa {
   background-color: rgb(95, 212, 95);
   color: rgb(249, 253, 249);
   border: none;
@@ -30,7 +30,7 @@ header{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
-#remover-finalizados{
+#remover-finalizados {
 background-color: rgb(224, 226, 101);
 color: rgb(249, 253, 249);
 border: none;
@@ -39,7 +39,8 @@ border-radius: 30px;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;
 }
-#apaga-tudo{
+
+#apaga-tudo {
   background-color: rgb(224, 100, 43);
   color: rgb(249, 253, 249);
   border: none;
@@ -49,19 +50,38 @@ font-weight: bold;
   font-weight: bold;
 }
 
-#criar-tarefa:hover, #apaga-tudo:hover, #remover-finalizados:hover{
-  opacity: 0.6;
+#criar-tarefa:hover, #apaga-tudo:hover, #remover-finalizados:hover {
+  opacity: 0.7;
 }
 
-#criar-tarefa:active{
+#criar-tarefa:active {
   background-color: rgb(249, 253, 249);
   color:rgb(95, 212, 95);
 }
-#apaga-tudo:active{
+#apaga-tudo:active {
   background-color: rgb(249, 253, 249);
   color: rgb(224, 100, 43);
 }
-#remover-finalizados:active{
+#remover-finalizados:active {
   background-color: rgb(249, 253, 249);
   color: rgb(224, 226, 101) ;
+}
+
+h1 {
+  font-family: 'Titan One', cursive;
+  color: rgb(37, 150, 190);
+}
+
+p {
+  color: aliceblue;
+  font-weight: 900;
+  background-color: #f3a59e;
+}
+
+li {
+  color: aliceblue;
+  font-family: 'Titan One', cursive;
+  background-color: #f3a59e;
+
+  opacity: 100%;
 }
